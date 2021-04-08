@@ -1,0 +1,16 @@
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.exe
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.deps.json
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.runtimeconfig.json
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.runtimeconfig.dev.json
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.dll
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\ref\HW8.dll
+C:\Users\Илья\source\repos\HW8\HW8\bin\Debug\net5.0\HW8.pdb
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.csprojAssemblyReference.cache
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.AssemblyInfoInputs.cache
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.AssemblyInfo.cs
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.csproj.CoreCompileInputs.cache
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.dll
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\ref\HW8.dll
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.pdb
+C:\Users\Илья\source\repos\HW8\HW8\obj\Debug\net5.0\HW8.genruntimeconfig.cache

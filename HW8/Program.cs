@@ -6,16 +6,16 @@ namespace HW8
     {
         static void Main(string[] args)
         {
-            //Calculator calcResult = new Calculator();
+            Calculator calcResult = new Calculator();
 
-            //calcResult.firstNumb = calcResult.GetFirstNumb();
-            //calcResult.actionValue = calcResult.GetActionValue();
-            //calcResult.secondNumb = calcResult.GetSecondNumb();
+            calcResult.firstNumb = calcResult.GetFirstNumb();
+            calcResult.actionValue = calcResult.GetActionValue();
+            calcResult.secondNumb = calcResult.GetSecondNumb();
 
 
-            //calcResult.result = calcResult.GetResult();
+            calcResult.result = calcResult.GetResult();
 
-            //Console.WriteLine($"Результат {calcResult.firstNumb} {calcResult.actionValue} {calcResult.secondNumb} = {calcResult.result}");
+            Console.WriteLine($"Результат {calcResult.firstNumb} {calcResult.actionValue} {calcResult.secondNumb} = {calcResult.result}");
 
 
 
