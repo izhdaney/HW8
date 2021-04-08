@@ -32,21 +32,25 @@ namespace HW8
             {
                 result = GetSum(firstNumb, secondNumb);
             }
-            if (actionValue == '-')
+            else if (actionValue == '-')
             {
                 result = GetSub(firstNumb, secondNumb);
             }
-            if (actionValue == '*')
+            else if (actionValue == '*')
             {
                 result = GetMult(firstNumb, secondNumb);
             }
-            if (secondNumb == 0 && actionValue == '/')
+            else if (secondNumb == 0 && actionValue == '/')
             {
                 Console.WriteLine($"Деление на ноль невозможно.");
             }
-            if (actionValue == '/')
+            else if (actionValue == '/')
             {
                 result = GetDiv(firstNumb, secondNumb);
+            }
+            else
+            {
+                Console.WriteLine($"Wrong input. Please try again");
             }
 
             return result;
