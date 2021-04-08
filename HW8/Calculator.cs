@@ -9,98 +9,127 @@ namespace HW8
     class Calculator
     {
 
-        private static void Task7()
-        {
-            Console.WriteLine("Please Enter first number");
-            if (double.TryParse(Console.ReadLine(), out double firstNumb))
-            {
-                Console.WriteLine("Please select an action (+, -, /, *)");
-                if (char.TryParse(Console.ReadLine(), out char actionValue))
-                {
-                    Console.WriteLine("Please Enter second number");
-                    if (double.TryParse(Console.ReadLine(), out double secondNumb))
-                    {
-                        double result = 0;
-                        switch (actionValue)
-                        {
-                            case '+':
-                                result = getSumTask7(firstNumb, secondNumb);
-                                Console.WriteLine($"Result is {result}");
-                                break;
-                            case '-':
-                                result = getSubTask7(firstNumb, secondNumb);
-                                Console.WriteLine($"Result is {result}");
-                                break;
-                            case '/':
 
-                                if (secondNumb == 0)
-                                {
-                                    Console.WriteLine("Wrong input. Please try again.");
-                                }
-                                else
-                                {
-                                    result = getDivTask7(firstNumb, secondNumb);
-                                    Console.WriteLine($"Result is {result}");
-                                }
-                                break;
-                            case '*':
-                                result = getMultTask7(firstNumb, secondNumb);
-                                Console.WriteLine($"Result is {result}");
-                                break;
-                            default:
-                                Console.WriteLine("Wrong input action. Please try again.");
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong input. Please try again.");
-                    }
+        public double firstNumb;
+        public double secondNumb;
+        public char actionValue;
+        public double result;
+
+
+        public void Print()
+        {
+            GetResult();
+            Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
+        }
+
+        public double GetResult()
+        {
+            //firstNumb = GetFirstNumb();
+            //actionValue = GetActionValue();
+            //secondNumb = GetSecondNumb();
+
+            if (actionValue == '+')
+            {
+                result = GetSum(firstNumb, secondNumb);
+            }
+            if (actionValue == '-')
+            {
+                result = GetSub(firstNumb, secondNumb);
+            }
+            if (actionValue == '*')
+            {
+                result = GetMult(firstNumb, secondNumb);
+            }
+            if (secondNumb == 0 && actionValue == '/')
+            {
+                Console.WriteLine($"Деление на ноль невозможно.");
+            }
+            if (actionValue == '/')
+            {
+                result = GetDiv(firstNumb, secondNumb);
+            }
+
+            return result;
+        }
+
+        public double GetFirstNumb()
+        {
+            double returnValue;
+            Console.WriteLine("Please Enter first number");
+            do
+            {
+                if (double.TryParse(Console.ReadLine(), out returnValue))
+                {
+                    break;
                 }
                 else
                 {
                     Console.WriteLine("Wrong input. Please try again.");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Wrong input. Please try again.");
-            }
-
-
-            Console.WriteLine("Do you want to try again? Enter Y to continue or any key to exit.");
-            string value = Convert.ToString(Console.ReadLine());
-            if (value == "y")
-            {
-                Task7();
-            }
-
-
+            } while (true);
+            return returnValue;
         }
 
-        private static double getSumTask7(double firstNumb, double secondNumb)
+        public double GetSecondNumb()
+        {
+            double returnValue;
+            Console.WriteLine("Please Enter second number");
+            do
+            {
+                if (double.TryParse(Console.ReadLine(), out returnValue))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong input. Please try again.");
+                }
+            } while (true);
+            return returnValue;
+        }
+
+        public char GetActionValue()
+        {
+            Console.WriteLine("Please select an action (+, -, /, *)");
+
+            char returnValue;
+
+            do
+            {
+                if (char.TryParse(Console.ReadLine(), out returnValue))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong input. Please try again.");
+                }
+            } while (true);
+            return returnValue;
+        }
+
+        private double GetSum(double firstNumb, double secondNumb)
         {
             double result = firstNumb + secondNumb;
             return result;
         }
 
-        private static double getDivTask7(double firstNumb, double secondNumb)
+        private double GetDiv(double firstNumb, double secondNumb)
         {
             double result = firstNumb / secondNumb;
             return result;
         }
 
-        private static double getSubTask7(double firstNumb, double secondNumb)
+        private double GetSub(double firstNumb, double secondNumb)
         {
             double result = firstNumb - secondNumb;
             return result;
         }
 
-        private static double getMultTask7(double firstNumb, double secondNumb)
+        private double GetMult(double firstNumb, double secondNumb)
         {
             double result = firstNumb * secondNumb;
             return result;
         }
-
     }
 }
