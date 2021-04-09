@@ -19,7 +19,7 @@ namespace HW8
         public void Print()
         {
             GetResult();
-            Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
+            //Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
         }
 
         public double GetResult()
@@ -31,22 +31,26 @@ namespace HW8
             if (actionValue == '+')
             {
                 result = GetSum(firstNumb, secondNumb);
+                Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
             }
             else if (actionValue == '-')
             {
                 result = GetSub(firstNumb, secondNumb);
+                Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
             }
             else if (actionValue == '*')
             {
                 result = GetMult(firstNumb, secondNumb);
+                Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
             }
-            else if (secondNumb == 0 && actionValue == '/')
+            else if (actionValue == '/' && secondNumb == 0)
             {
-                Console.WriteLine($"Деление на ноль невозможно.");
+                Console.WriteLine($"Деление на 0 невозможно.");
             }
             else if (actionValue == '/')
             {
                 result = GetDiv(firstNumb, secondNumb);
+                Console.WriteLine($"Резульат операции {firstNumb} {actionValue} {secondNumb} = {result}");
             }
             else
             {
@@ -55,6 +59,7 @@ namespace HW8
 
             return result;
         }
+
 
         public double GetFirstNumb()
         {
