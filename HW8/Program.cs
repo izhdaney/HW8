@@ -7,14 +7,19 @@ namespace HW8
         static void Main(string[] args)
         {
 
-            Calculator calcResult = new Calculator();
+            //Calculator calcResult = new Calculator();
 
-            calcResult.firstNumb = calcResult.GetFirstNumb();
-            calcResult.actionValue = calcResult.GetActionValue();
-            calcResult.secondNumb = calcResult.GetSecondNumb();
+            //calcResult.firstNumb = calcResult.GetFirstNumb();
+            //calcResult.actionValue = calcResult.GetActionValue();
+            //calcResult.secondNumb = calcResult.GetSecondNumb();
 
 
-            calcResult.GetResult();
+            //calcResult.GetResult();
+
+            MyArray n = new MyArray();
+
+            
+
 
         }
     }
